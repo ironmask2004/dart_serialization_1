@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'address.dart';
 import 'statuscode.dart';
 
-part '../lib/user.g.dart';
+part 'user.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class User {

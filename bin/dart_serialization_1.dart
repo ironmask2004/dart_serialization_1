@@ -1,8 +1,8 @@
-import 'package:dart_serialization_1/user.dart';
+import 'dart:convert';
 
-import '../lib/address.dart';
-import 'statuscode.dart';
-import 'user.dart';
+import 'package:dart_serialization_1/address.dart';
+import 'package:dart_serialization_1/statuscode.dart';
+import 'package:dart_serialization_1/user.dart';
 
 //TODO flutter  pub run build_runner clean
 //TODO flutter  pub run build_runner build --delete-conflicting-outputs
@@ -26,4 +26,7 @@ void main(List<String> arguments) {
   print(user3.toJson());
   print(user3.toString());
   print(user4.toJson());
+
+  print(json.decode(
+      '{ "name": "John3",    "address": {"street": "My st3.", "city": "New York3"},    "status": "50"  }'));
 }
