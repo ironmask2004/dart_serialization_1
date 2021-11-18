@@ -1,4 +1,6 @@
-import 'address.dart';
+import 'package:dart_serialization_1/user.dart';
+
+import '../lib/address.dart';
 import 'statuscode.dart';
 import 'user.dart';
 
